@@ -27,7 +27,19 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        week02Variable()
     }
+}
+
+private fun week02Variable(){
+    println("Week 02 : Variables")
+
+    val courseName = "Mobile Programming"
+
+    var week = 1
+    week =2
+    println("Course : $courseName")
+    println("Week : $week")
 }
 
 @Composable
