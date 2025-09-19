@@ -29,6 +29,23 @@ class MainActivity : ComponentActivity() {
         }
         week02Variable()
         week02Functions()
+        week03Classes()
+    }
+
+    private fun week03Classes() {
+
+        class Student {
+            var name:String = ""
+            var age: Int = 0
+
+            fun introduce() {
+                println("Hi, Im $name and I'm $age years old")
+            }
+        }
+        val student = Student()
+        student.name = "Mirae"
+        student.age=21
+        student.introduce()
     }
 }
 
