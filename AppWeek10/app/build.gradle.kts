@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.appweek09"
+    namespace = "com.appweek10"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.appweek09"
+        applicationId = "com.appweek10"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -35,13 +35,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
-    // ViewBinding Activate
-    // pros : 1) 타입 안정성, 2) Null 안정성, 3) findViewById 반복 제거, 4)성능
-    // cons : 1) 빌드 시간 증가, 2) 바인딩 객체 생성 필요, 3) 학습 곡선
-    buildFeatures{
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -50,10 +43,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-
-    /// RecyclerView
-    implementation("androidx.recyclerview:recyclerview:1.4.0")
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
